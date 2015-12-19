@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.kaving.myapplication" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality. 
+    -->
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/user"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+
+        <receiver android:name=".BroadCastDemo" >
+            <intent-filter>
+                <action android:name="android.intent.action.AIRPLANE_MODE" />
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+                <action android:name="android.intent.action.BATTERY_LOW" />
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.WALLPAPER_CHANGED" />
+                <action android:name="android.intent.action.HEADSET_PLUG" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".AutoReplyMsg" >
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+        <service android:name=".MusicService"
+            android:exported="false">
+
+        </service>
+        <activity
+            android:name=".Calculator"
+            android:label="Calculator" >
+        </activity>
+        <activity
+            android:name=".GreetUser"
+            android:label="Greet User" >
+        </activity>
+        <activity
+            android:name=".MyJokes"
+            android:label="Jokes" >
+
+        </activity>
+        <activity
+            android:name=".InstagramCloneActivity"
+            android:label="@string/title_activity_instagram_clone"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="image/*" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".NewsActivity"
+            android:label="@string/title_activity_news"
+             >
+        </activity>
+        <activity
+            android:name=".NewsReadActivity"
+            android:label="@string/title_activity_news"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".AudioPlayer"
+            android:label="@string/title_activity_audio_player"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".Splash"
+            android:label="MyAllApps"
+            android:theme="@style/AppTheme.NoActionBar" >
+
+        </activity>
+        <activity
+            android:name=".UserDataActivity"
+            android:label="UserDataActivity"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".AddressFormActivity"
+            android:label="AddressFormActivity"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".LifeCycleActivity"
+            android:label="life Cycle"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".MyCamera"
+            android:label="My Camera"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".OpenContacts"
+            android:label="Open Contacts"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".CallMsg"
+            android:label="@string/title_activity_main2"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".VideoPlayer"
+            android:label="@string/title_activity_video_player"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".SensorListActivity"
+            android:label="SensorListActivity"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".ReadingSensorValues"
+            android:label="@string/title_activity_reading_sensor_values"
+            android:theme="@style/AppTheme.NoActionBar" >
+
+        </activity>
+        <activity
+            android:name=".AnimationActivity"
+            android:label="Animation"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".RightOrLeftDetection"
+            android:label="RightOrLeftDetection"
+            android:theme="@style/AppTheme.NoActionBar" >
+
+        </activity>
+        <activity
+            android:name=".GoogleMapNewsRead"
+            android:label="GoogleMapNewsRead"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".LocationDevice"
+            android:label="GoogleMapNewsRead"
+            android:theme="@style/AppTheme.NoActionBar" >
+
+        </activity>
+        <activity
+            android:name=".SharedPreferenceDemo"
+            android:label="SharedPreferenceDemo"
+            android:theme="@style/AppTheme.NoActionBar" >
+
+
+        </activity>
+        <activity
+            android:name=".BackGroundColorActivity"
+            android:label="BackGroundColorActivity"
+            android:theme="@style/AppTheme.NoActionBar" >
+
+
+        </activity>
+        <activity
+            android:name=".BluetoothActivity"
+            android:label="BluetoothActivity"
+            android:theme="@style/AppTheme.NoActionBar" >
+
+
+        </activity>
+        <activity
+            android:name=".NotificationSendActivity"
+            android:label="NotificationSendActivity"
+            android:theme="@style/AppTheme.NoActionBar" >
+
+
+        </activity>
+        <activity
+            android:name=".NotificationView"
+            android:label="NotificationView"
+            android:theme="@style/AppTheme.NoActionBar" >
+
+        </activity>
+
+        <activity
+            android:name=".CompassActivity"
+            android:label="CompassActivity"
+            android:theme="@style/AppTheme.NoActionBar" >
+
+        </activity>
+
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".MapsActivity"
+            android:label="@string/title_activity_maps" >
+
+        </activity>
+    </application>
+
+</manifest>

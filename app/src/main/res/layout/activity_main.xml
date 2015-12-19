@@ -1,0 +1,167 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="fill_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:background="@drawable/bg"
+    >
+
+    <Button
+        android:background="@drawable/greet"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:id="@+id/btnGreet"
+        android:onClick="onClick"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:background="@drawable/calci"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:id="@+id/btnCalci"
+        android:onClick="onClick"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:background="@drawable/jokes"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:id="@+id/btnJokes"
+        android:onClick="onClick"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+    <Button
+        android:background="@drawable/insta"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:id="@+id/btnInstagram"
+        android:onClick="onClick"
+        android:layout_above="@+id/btnAudioPlayer"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <Button
+        android:background="@drawable/news"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:id="@+id/btnNewsActivity"
+        android:onClick="onClick"
+        android:layout_above="@+id/btnAudioPlayer"
+        android:layout_alignLeft="@+id/btnJokes"
+        android:layout_alignStart="@+id/btnJokes" />
+
+    <Button
+        android:background="@drawable/music"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:id="@+id/btnAudioPlayer"
+        android:onClick="onClick"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:id="@+id/btnUserData"
+        android:onClick="onClick"
+        android:background="@android:drawable/ic_input_get"
+        android:layout_alignTop="@+id/btnAudioPlayer"
+        android:layout_alignLeft="@+id/btnNewsActivity"
+        android:layout_alignStart="@+id/btnNewsActivity" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:text="Life Cycle"
+        android:id="@+id/btnLifeCycle"
+        android:onClick="onClick"
+        android:layout_above="@+id/btnAudioPlayer"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:id="@+id/btnMyCamera"
+        android:onClick="onClick"
+        android:background="@android:drawable/ic_menu_camera"
+        android:layout_alignTop="@+id/btnMyContacts"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:id="@+id/btnMyContacts"
+        android:onClick="onClick"
+        android:background="@android:drawable/ic_input_add"
+        android:layout_below="@+id/btnCallMsg"
+        android:layout_alignLeft="@+id/btnNewsActivity"
+        android:layout_alignStart="@+id/btnNewsActivity" />
+
+    <Button
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:id="@+id/btnCallMsg"
+        android:onClick="onClick"
+        android:background="@android:drawable/ic_menu_call"
+        android:layout_alignTop="@+id/btnUserData"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Video Player"
+        android:id="@+id/btnVideoPlayer"
+        android:layout_alignBottom="@+id/btnMyContacts"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sensor List"
+        android:id="@+id/btnSensorList"
+        android:layout_below="@+id/btnMyCamera"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="onClick" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnSensorValues"
+        android:layout_below="@+id/btnSensorList"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:text="Sensor Values"
+        android:onClick="onClick" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Animation"
+        android:id="@+id/btnAnimation"
+        android:layout_below="@+id/btnSensorValues"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="onClick" />
+
+
+</RelativeLayout>

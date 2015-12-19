@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">My Apps</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_instagram_clone">InstagramCloneActivity</string>
+    <string name="title_activity_news">NewsActivity</string>
+    <string name="title_activity_audio_player">AudioPlayer</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_activity_user_data">UserDataActivity</string>
+    <string name="title_activity_broad_cast_demo">BroadCastDemo</string>
+    <string name="title_activity_video_player">VideoPlayer</string>
+    <string name="title_activity_reading_sensor_values">ReadingSensorValues</string>
+    <string name="title_activity_readding_sensor_values">ReaddingSensorValues</string>
+    <string name="title_activity_maps">Map</string>
+</resources>
